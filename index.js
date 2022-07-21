@@ -5,7 +5,6 @@ const MongoClient = require('mongodb').MongoClient;
 const mongoose = require("mongoose")
 const handlebars = require("express-handlebars")
 const bodyParser = require("body-parser")
-var PORT = process.env.PORT || 8081
 // engine 
 app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
@@ -38,6 +37,6 @@ app.get("/", (req, res)=>{
     })
   })
 })
-app.listen(PORT, ()=> {
+app.listen(process.env.PORT || 3000, function(){
   console.log("Servidor online")
 })
