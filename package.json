@@ -71,6 +71,7 @@
     "ms": "^2.0.0",
     "mquery": "^4.0.3",
     "nodemon": "^2.0.2",
+    "node": "^18.4.0",
     "fs.realpath": "^1.0.0",
     "minimist": "^1.2.6",
     "negotiator": "^0.6.3",
