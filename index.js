@@ -33,7 +33,7 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  gustavo.find().then(function(post){
+  gustavo.findAll().then(function(post){
     res.render("home", {
       post:post
     })
