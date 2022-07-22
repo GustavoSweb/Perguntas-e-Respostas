@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const express = require("express")
 const app = express()
 const MongoClient = require('mongodb').MongoClient;
@@ -12,7 +12,7 @@ app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 //mongosse
-mongoose.connect(process.env.BANCO_DE_DADOS);
+mongoose.connect("mongodb+srv://gustavo:progamacao10@cluster0.3wzok.mongodb.net/?retryWrites=true&w=majority");
 const user = new mongoose.Schema({ name: String})
 const MyModel = mongoose.model('Test', user);
 

@@ -127,7 +127,7 @@
     "utils-merge": "^1.0.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.1"
+    
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
