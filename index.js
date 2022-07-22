@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 //mongosse
 
-mongoose.connect("mongodb+srv://gustavo:progamacao10@cluster0.3wzok.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect(process.env.SERVE);
 const user = new mongoose.Schema({ name: String})
 const MyModel = mongoose.model('Test', user);
 
