@@ -33,15 +33,11 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
+  const nome = gustavo.find()
   
-  new gustavo.find().then(function(post){
     res.render("home", {
-      post:post
+      post:nome
     })
-  }).catch((erro)=> {
-    res.send("Algo deu errado"+erro)
-    
-  })
   
 })
 
