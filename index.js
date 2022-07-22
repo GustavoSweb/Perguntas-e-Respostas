@@ -20,23 +20,16 @@ const MyModel = mongoose.model('Test', user);
 const gustavo = mongoose.model('Test')
 
 
-app.post("/add", (req, res)=> {
-
- new gustavo({
+app.post("/add", (req, res)=>{
+  new gustavo({
     name: req.body.name
 }).save().then(()=>{
     res.redirect("/")
   }).catch(()=> {
     res.send("Infelizmente acorreu um erro, por favor tente novamente.")
   })
-    
 })
 app.get("/", (req, res)=>{
-  res.render("formulario")
-
-  
-})
-app.get("/card", (req, res)=>{
   gustavo.find({order: [['id', 'DESC']]}).then((post)=> {
     res.render("home", {
       post:post
@@ -45,7 +38,9 @@ app.get("/card", (req, res)=>{
     res.send("Algo deu errado"+erro)
     
   })
+  
 })
+
 app.listen(process.env.PORT || 27017, function(){
   console.log("Servidor online"+process.env.PORT || 2701)
 })
