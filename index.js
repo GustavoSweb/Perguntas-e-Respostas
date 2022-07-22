@@ -33,11 +33,11 @@ app.post("/add", (req, res)=> {
 })
 app.get("/", (req, res)=>{
   res.send("esta funcionando ")
- /*gustavo.find({order: [['id', 'DESC']]}).then(function(post){
+  gustavo.find({order: [['id', 'DESC']]}).then(function(post){
     res.render("home", {
       post:post
     })
-  })*/
+  })
 })
 app.listen(process.env.PORT || 3000, function(){
   console.log("Servidor online")
