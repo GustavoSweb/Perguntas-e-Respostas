@@ -13,7 +13,10 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 //mongosse
 
-mongoose.connect(process.env.SERVE);
+mongoose.connect(process.env.SERVE, {
+ useNewUrlParser: true,
+ useUnifiedTopology: true
+});
 const user = new mongoose.Schema({ name: String})
 const MyModel = mongoose.model('Test', user);
 
