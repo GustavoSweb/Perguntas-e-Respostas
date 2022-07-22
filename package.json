@@ -127,12 +127,11 @@
     "utils-merge": "^1.0.1"
   },
   "devDependencies": {
-    
+    "dotenv": "^16.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

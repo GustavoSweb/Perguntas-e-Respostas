@@ -1,6 +1,5 @@
+
 const express = require("express")
-const serverless = require("serverless-http");
-const router = express.Router();
 const app = express()
 const MongoClient = require('mongodb').MongoClient;
 const mongoose = require("mongoose")
@@ -38,7 +37,6 @@ app.get("/", (req, res)=>{
     })
   })
 })
-app.use(`/.netlify/functions/api`, router);
-
-module.exports = app;
-module.exports.handler = serverless(app);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Servidor online")
+})
