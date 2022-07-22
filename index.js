@@ -33,12 +33,18 @@ app.post("/add", (req, res)=> {
 })
 app.get("/", (req, res)=>{
   res.render("formulario")
-  /*
-  gustavo.find({order: [['id', 'DESC']]}).then(function(post){
+
+  
+})
+app.get("/card", (req, res)=>{
+  gustavo.find({order: [['id', 'DESC']]}).then((post)=> {
     res.render("home", {
       post:post
     })
-  }).catch((erro)=> res.send("Algo deu errado"+erro))*/
+  }).catch((erro)=> {
+    res.send("Algo deu errado"+erro)
+    
+  })
 })
 app.listen(process.env.PORT || 3000, function(){
   console.log("Servidor online")
