@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 
 
 app.post("/add", (req, res)=> {
-  
+  res.send("esta funcionando ")
  /* new gustavo({
     name: req.body.name
 }).save().then(()=>{
@@ -32,6 +32,7 @@ app.post("/add", (req, res)=> {
     
 })
 app.get("/", (req, res)=>{
+  res.send("esta funcionando ")
  /* gustavo.find({order: [['id', 'DESC']]}).then(function(post){
     res.render("home", {
       post:post
