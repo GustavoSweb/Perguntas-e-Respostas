@@ -33,11 +33,11 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  const nome = gustavo.find({}).toArray(function(err, result) {
+  const nome = gustavo.find({}).
     res.render("home", {
-      post:result
+      post:nome
     })
-  });
+
   
     
   
