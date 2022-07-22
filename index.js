@@ -36,7 +36,7 @@ app.get("/", (req, res)=>{
     res.render("home", {
       post:post
     })
-  })
+  }).catch((erro)=> res.send("Algo deu errado"+erro))
 })
 app.listen(process.env.PORT || 3000, function(){
   console.log("Servidor online")
