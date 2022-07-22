@@ -28,16 +28,16 @@ app.post("/add", (req, res)=>{
     name: req.body.name
 }).save().then(()=>{
     res.redirect("/")
-  }).catch(()=> {
-    res.send("Infelizmente acorreu um erro, por favor tente novamente.")
   })
 })
 app.get("/", (req, res)=>{
-  const nome = gustavo.find()
-  
+  const nome = gustavo.find({}).toArray(function(err, result) {
     res.render("home", {
-      post:nome
+      post:result
     })
+  });
+  
+    
   
 })
 
