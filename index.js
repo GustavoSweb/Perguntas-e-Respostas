@@ -14,10 +14,10 @@ app.use(bodyParser.json())
 //mongosse
 
 //mongoose.connect("mongodb+srv://gustavo:progamacao10@cluster0.3wzok.mongodb.net/?retryWrites=true&w=majority");
-const user = new mongoose.Schema({ name: String})
-const MyModel = mongoose.model('Test', user);
+//const user = new mongoose.Schema({ name: String})
+//const MyModel = mongoose.model('Test', user);
 
-const gustavo = mongoose.model('Test')
+//const gustavo = mongoose.model('Test')
 
 
 app.post("/add", (req, res)=> {
