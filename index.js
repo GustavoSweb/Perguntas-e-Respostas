@@ -28,6 +28,8 @@ app.post("/add", (req, res)=>{
     name: req.body.name
 }).save().then(()=>{
     res.redirect("/")
+  }).catch((err)=>{
+    res.send("deu pau"+err)
   })
 })
 app.get("/", (req, res)=>{
