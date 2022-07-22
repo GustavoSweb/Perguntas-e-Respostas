@@ -46,6 +46,6 @@ app.get("/card", (req, res)=>{
     
   })
 })
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 27017, function(){
   console.log("Servidor online")
 })
