@@ -32,7 +32,7 @@ app.post("/add", (req, res)=> {
     
 })
 app.get("/", (req, res)=>{
-  res.render("views/formulario.handlebars")
+  res.render("formulario")
   /*
   gustavo.find({order: [['id', 'DESC']]}).then(function(post){
     res.render("home", {
