@@ -30,7 +30,7 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  gustavo.find({order: [['id', 'DESC']]}).then((post)=> {
+  gustavo.find({order: [['id', 'DESC']]}).then(function(post){
     res.render("home", {
       post:post
     })
