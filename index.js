@@ -33,7 +33,7 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  var nome = gustavo.find({}).
+  var nome = gustavo.findAll().
     res.render("home", {
       post:nome
     })
