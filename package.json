@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "chats",
   "version": "1.0.0",
   "description": "oia",
   "main": "index.js",
@@ -126,7 +126,7 @@
     "serve-static": "^1.15.0"
   },
   "engines": {
-    "node": "6.11.1"
+    "node": "18.4.0"
   },
   "devDependencies": {},
   "scripts": {
