@@ -36,7 +36,7 @@ app.get("/", (req, res)=>{
   gustavo.find().limit(5).then((post)=> {
     
     res.render("home", {
-      post:post
+      post:post[1]
     })
 })
 
