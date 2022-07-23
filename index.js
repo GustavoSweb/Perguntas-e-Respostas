@@ -33,7 +33,8 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  gustavo.find().then((nome)=> {
+  gustavo.find().limit(5).then((nome)=> {
+    console.log(nome)
     res.render("home", {
       post:nome
     })
