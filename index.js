@@ -33,10 +33,10 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  gustavo.find().limit(5).then((post)=> {
+  gustavo.find().limit(5).lean().then((post)=> {
     
     res.render("home", {
-      post:post[0]
+      post:post
     })
 })
 
