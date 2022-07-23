@@ -33,7 +33,7 @@ app.post("/add", (req, res)=>{
   })
 })
 app.get("/", (req, res)=>{
-  gustavo.find().sort( { age : -1, posts: 1 } ).limit(5).lean().then((post)=> {
+  gustavo.find().sort( { age : 1, posts: -1 } ).limit(5).lean().then((post)=> {
     
     res.render("home", {
       post:post
