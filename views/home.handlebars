@@ -1,7 +1,8 @@
 
 <h1>Chat</h1>
+<p>{{post.name}}</p>
 {{#each post}}
-<p>{{name}}</p>
+<p>{{post.name}}</p>
 {{/each}}
 <form action="/add" method="post">
   <input type="text" name="name">
