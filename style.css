@@ -120,14 +120,17 @@ footer{
   padding: 1em;
   margin: 1em;
   margin-top: 5em;
-  
+  font-size: 0.8em;
   text-align: center;
   
 }
 footer > div > img{
-  width: 3em;
-  height: 3em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  width: 2em;
+  height: 2em;
 }
+
 a{
   display: block;
   text-decoration: none;
