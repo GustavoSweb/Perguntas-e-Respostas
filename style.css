@@ -22,6 +22,9 @@
   
   height: 40em;
 }
+#email{
+  font-size: 0.9em
+}
 #texto{
   
   border-radius: 25px;
