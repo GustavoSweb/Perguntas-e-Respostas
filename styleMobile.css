@@ -1,4 +1,7 @@
 @media (max-width: 750px) {
+  .opacity {
+    opacity: 1;
+  }
   .pro{
     width: 20em;
   height: 15em;

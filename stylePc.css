@@ -1,4 +1,7 @@
 @media (min-width: 751px){
+  .opacity {
+  opacity: 1;
+}
   #biomedicina h3{
   font-size: 1.3em
 }
