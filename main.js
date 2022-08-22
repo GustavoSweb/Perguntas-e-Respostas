@@ -1,12 +1,17 @@
 const pro = document.querySelectorAll('.pro')
-
 document.addEventListener('scroll', ()=> {
   pro.forEach(element =>{
-    
-    if (this.scrollY >= element.offsetTop-540) {
+    if(window. screen. width > 600){
+      if (this.scrollY >= element.offsetTop) {
       element.classList.add('opacity')
     }else{
       element.classList.remove('opacity')
     }
+    }else{
+    if (this.scrollY >= element.offsetTop-540) {
+      element.classList.add('opacity')
+    }else{
+      element.classList.remove('opacity')
+    }}
   })
 })
