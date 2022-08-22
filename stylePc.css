@@ -9,6 +9,7 @@
   font-size: 0.8em
 }
   .pro{
+    opacity: 0;
     width: 17em;
   height: 12em;
   margin-left: 3em;
