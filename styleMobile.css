@@ -1,4 +1,7 @@
 @media (max-width: 750px) {
+  #projeto{
+    font-size: 3.5em;
+  }
   .opacity {
     opacity: 1;
   }
