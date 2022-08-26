@@ -20,17 +20,8 @@
 #biomedicina p{
   font-size: 0.8em
 }
-  .pro{
-    
-    width: 17em;
-  height: 12em;
-  margin-left: 3em;
-  border-radius: 2em;
-  }
-  #projetos{
-    display: flex;
-    height: 40em;
-    }
+
+  
   #boxText{
     display: flex;
   justify-content: space-around;
@@ -48,7 +39,12 @@
   align-items: center;
   
 }
-
+.pro{
+  margin-top: 0.87em;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  }
   #texto{
   height: 5.5em;
   width: 26.5em;

@@ -12,12 +12,15 @@
   position: relative;
   overflow: hidden;
   background-color: #0D4F5C;
-  width: 329px;
-  height: 250px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  min-width: 330px !important;
+  min-height: 250px !important;
+  max-width: 330px !important;
+  max-height: 250px !important;
+  transition: 1s linear;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   border-radius: 20px;
   
 }
@@ -37,8 +40,8 @@
 }
 .fundo{
   display: flex;
-  align-items: center;
-  
+  align-items: center !important;
+  justify-content: center !important;
   position: relative;
   margin: 1em;
   opacity: 0;
@@ -55,8 +58,12 @@
   top: -0.5em!important;
   width: 92%;
   height: 92%;
-  
-  transition: 1s linear;
+  border-radius: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 1em;
 }
 #texto, #email{
@@ -145,15 +152,7 @@ a{
   align-items: center;
 }
 
-.emBreve{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  transition: all 1s;
-  
-  border-radius: 20px;
-}
+
 #ti{
   position: relative;
 }
@@ -233,8 +232,8 @@ a{
 }
 
 
-.pro:hover{
-  bottom: 1.5em;
+.cards:hover{
+  transform: translateY(-1em);
   box-shadow: 15px 15px 20px 6px #00000021;
 }
 #projetos{
@@ -243,5 +242,5 @@ a{
     align-items: center;
     position: relative;
     background-color: #0D4F5C; 
-    
+    padding-bottom: 3em;
 }
