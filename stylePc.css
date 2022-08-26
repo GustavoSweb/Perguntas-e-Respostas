@@ -2,8 +2,15 @@
   #projeto{
     font-size: 5em;
     border: 0;
-    border-bottom: 0.1em solid;
   }
+  #hrPro{
+    
+    height: 7px;
+    background-color: #1BA6C2;
+    width: 10em;
+    border: 0;
+  }
+  
   .opacity {
   opacity: 1;
 }
@@ -21,7 +28,8 @@
   border-radius: 2em;
   }
   #projetos{
-    height: 30em;
+    display: flex;
+    height: 40em;
     }
   #boxText{
     display: flex;

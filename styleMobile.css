@@ -12,7 +12,8 @@
   border-radius: 1em;
   }
 #projetos{
-    height: 60em;
+    height: 70em;
+    padding-top: 3em;
 }
    #boxText{
     display: flex;
@@ -42,10 +43,10 @@
 
 #email{
  
-  width: 18em;
-  height: 1.5em;
+  width: 18.5em;
+  height: 2em;
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 1em;
   background: #FFFFFF;
   border-radius: 20px;
 }
@@ -73,6 +74,6 @@
   }
   #breve2{
     order: 3;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 }

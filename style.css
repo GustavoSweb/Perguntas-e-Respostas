@@ -1,12 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .opacity {
   opacity: 1;
+  
+}
+.cards{
+  position: relative;
+  overflow: hidden;
+  background-color: #0D4F5C;
+  width: 329px;
+  height: 250px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  
+}
+.cards:before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 180%;
+  animation: anima 4s ease-in-out infinite;
+  background-color: #1BA6C2;
+  
+}
+@keyframes anima{
+  100%{
+    transform: rotate(360deg)
+  }
+}
+.fundo{
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  margin: 1em;
+  opacity: 0;
+  transition: 1s linear;
+  
+  
 }
 .pro{
-  box-shadow: 1px 1px 10px 2px #00000015;
+  position: absolute;
+  color: white;
+  background-color: #0D4F5C;
+  box-shadow: 1px 1px 4px 2px #00000015;
   position: relative;
-  bottom: 0em;
-  opacity: 0;
+  top: -0.5em!important;
+  width: 92%;
+  height: 92%;
+  
   transition: 1s linear;
   padding: 1em;
 }
@@ -28,13 +77,17 @@
   position: fixed;
   z-index: 999;
   width: 100%;
+  backdrop-filter: blur(3px);
+  
 }
 #partePrincipal{
   background-color: #0D4F5C;
   
   height: 40em;
 }
-
+.black{
+  color: black;
+}
 #texto{
   
   border-radius: 25px;
@@ -49,10 +102,7 @@ body {
     margin: 0;
     background-color: white;
 }
-*{
-  padding: 0;
-  margin: 0;
-}
+
 footer{
   color: white;
   font-family: 'Inter';
@@ -88,8 +138,7 @@ a{
 }
 
 #linkProjeto{
-  width: 100%;
-  height: 100%;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -100,9 +149,9 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 0px 0px #FFF;
+  
   transition: all 1s;
-  background: rgba(255, 255, 255, 0.66);
+  
   border-radius: 20px;
 }
 #ti{
@@ -186,10 +235,13 @@ a{
 
 .pro:hover{
   bottom: 1.5em;
-  box-shadow: 15px 15px 20px 6px #DFDFDF40;
+  box-shadow: 15px 15px 20px 6px #00000021;
 }
 #projetos{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #0D4F5C; 
+    
 }
