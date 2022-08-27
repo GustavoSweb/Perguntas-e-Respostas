@@ -74,6 +74,7 @@
 #texto, #email{
   border: 0.1em solid #1BA6C2;
   font-size: 1em;
+  background-color: white !important;
 }
 #projeto{
   font-size: 3em;
