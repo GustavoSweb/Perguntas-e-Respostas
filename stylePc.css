@@ -56,8 +56,8 @@
   box-sizing: border-box;
   
 
-  width: 13.2em;
-  height: 4em;
+  width: 9em;
+  height: 3em;
   
   background: #88EAFF;
   border: 6px solid rgba(0, 209, 255, 0.2);
@@ -67,10 +67,10 @@
 #email{
   
     
-  width: 20.5em;
-  height: 1.5em;
+  width: 26.5em;
+  height: 2em;
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 1em;
   background: #FFFFFF;
   border-radius: 20px;
 }

@@ -2,17 +2,18 @@
 *{
   padding: 0;
   margin: 0;
+  
 }
 
 .opacity{
   opacity: 1;
-  transform: translateX(-50px);
+  transform: translateX(-40px);
 }
 .cards{
   position: relative;
   transform-style: preserve-3d;
   overflow: hidden;
-  transform: translateX(50px);
+  transform: translateX(40px);
   background-color: #0D4F5C;
   box-sizing: border-box;
   min-width: 330px !important;
@@ -90,6 +91,7 @@
   width: 100%;
   backdrop-filter: blur(3px);
   
+  
 }
 #partePrincipal{
   background-color: #0D4F5C;
@@ -112,6 +114,7 @@ body {
    padding: 0;
     margin: 0;
     background-color: white;
+    overflow: scroll;
 }
 
 footer{
@@ -237,7 +240,7 @@ a{
 
 
 .cards:hover{
-  transform: translateY(-1em);
+  transform: translate(2em, -1.5em);
   box-shadow: 15px 15px 20px 6px #00000021;
 }
 #projetos{
