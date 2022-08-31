@@ -14,12 +14,7 @@
   }
 #projetos{
     height: 70em;
-    padding-top: 5em;
-    margin-top: 3em;
-    padding-bottom: 3em;
-    clip-path: polygon(0 50px,100% 0, 100% 100%,0 100%);
-    
-  margin-top: -40px;
+    padding-top: 3em;
 }
    #boxText{
     display: flex;

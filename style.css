@@ -126,7 +126,7 @@ footer{
   padding-top: 3em;
   
   padding: 1em;
-  
+  margin-top: 5em;
   font-size: 0.8em;
   text-align: center;
   
@@ -170,7 +170,6 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
   
 }
 #boxText img{
@@ -251,5 +250,5 @@ a{
     align-items: center;
     position: relative;
     background-color: #0D4F5C; 
-    
+    padding-bottom: 3em;
 }
